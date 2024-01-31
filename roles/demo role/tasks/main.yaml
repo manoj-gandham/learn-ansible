@@ -5,3 +5,6 @@
 - name: print msg from roles
   ansible.builtin.debug:
     msg: helo from roles {{ domine }}
+- name: print msg from roles
+  ansible.builtin.debug:
+    msg: helo from roles {{ URL }}

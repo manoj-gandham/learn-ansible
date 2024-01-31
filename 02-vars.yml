@@ -28,6 +28,8 @@
 
 - name: variable from roles
   hosts: all
+  vars:
+    URL: EXAMPLE.COM
   roles:
     - demo role
 
