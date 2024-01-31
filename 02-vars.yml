@@ -1,11 +1,21 @@
+- name: demo on play level variables
+  hosts: all
+  vars:
+    domine: mdevops333.online
+  tasks:
+    - name: print domine
+      ansible.builtin.debug:
+        msg: helo from {{ domine }}
+
+
 - name: demo on task level variables
   hosts: all
   tasks:
     - name: print domine
       ansible.builtin.debug:
         msg: helo from {{ domine }}
-      vars:
-        domine: mdevops333.online
+  vars:
+    domine: mdevops333.online
 
 
 
