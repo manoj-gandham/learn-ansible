@@ -26,6 +26,12 @@
       ansible.builtin.debug:
         msg: helo from {{ domine }}
 
+- name: variable from roles
+  hosts: all
+  roles:
+    - demo role
+
+
 
 
 
