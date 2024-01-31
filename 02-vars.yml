@@ -17,6 +17,15 @@
   vars:
     domine: mdevops333.online
 
+- name: load vars from file
+  hosts: all
+  var_files:
+    - demovars.yml
+  tasks:
+    - name: print domine
+      ansible.builtin.debug:
+        msg: helo from {{ domine }}
+
 
 
 
