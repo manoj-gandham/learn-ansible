@@ -1,4 +1,4 @@
-- name: demo on play level variables
+- name: demo on task level variables
   hosts: all
   tasks:
     - name: print domine
