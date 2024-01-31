@@ -19,7 +19,7 @@
 
 - name: load vars from file
   hosts: all
-  var_files:
+  vars_files:
     - demovars.yml
   tasks:
     - name: print domine
