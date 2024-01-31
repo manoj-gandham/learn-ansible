@@ -1,8 +1,5 @@
 - name: demo on play level variables
   hosts: all
-  vars:
-    dns: mdevops333.online
-    domine: front.mdevops333.online
   tasks:
     vars:
       dns: mdevops333.online
