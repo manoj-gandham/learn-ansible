@@ -1,6 +1,4 @@
-- name: demo on playbook
+- name: demo on roles
   hosts: all
-  tasks:
-    - name: print hello world
-      ansible.builtin.debug:
-        msg: helo from manoj
+  roles:
+    - demo role
