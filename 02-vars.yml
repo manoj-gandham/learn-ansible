@@ -1,0 +1,9 @@
+- name: demo on play level variables
+  hosts: all
+  vars:
+    dns: mdevops333.online
+    tasks:
+      - name: print dns
+        ansible.builtin.debug:
+          msg: my dns is {{ dns}}
+
