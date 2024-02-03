@@ -1,5 +1,6 @@
 - name: aws parameter
   hosts: all
+  become: true
   tasks:
     - name: print parameter
       ansible.builtin.debug:
