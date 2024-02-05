@@ -5,6 +5,6 @@
     - name: loops demo
       ansible.builtin.debug:
         msg: city name - "{{ name of the city }}"
-        loop:
-          - hyd
-          - bangloore
+      loop:
+        - hyd
+        - banglr
