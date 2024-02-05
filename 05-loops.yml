@@ -4,7 +4,7 @@
   tasks:
     - name: Demo task for loop
       ansible.builtin.debug:
-        msg: city Name - {{ name }}
+        msg: City Name - {{ name }}
       loop:
         - hyd
         - bnglor
