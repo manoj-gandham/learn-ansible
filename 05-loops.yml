@@ -1,10 +1,10 @@
-- name: demo for loops
+- name: Demo on Loops
   hosts: localhost
   connection: local
   tasks:
-    - name: loops demo
+    - name: Demo task for loop
       ansible.builtin.debug:
-        msg: city name - {{ city }}
+        msg: Fruit Name - {{ item }}
       loop:
-        - hyd
-        - banglr
+        - apple
+        - banana
