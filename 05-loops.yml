@@ -1,0 +1,10 @@
+- name: demo for loops
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: loops demo
+      ansible.builtin.debug:
+        msg: city name - {{ name of the city }}
+        loop:
+          - hyd
+          - bangloore
