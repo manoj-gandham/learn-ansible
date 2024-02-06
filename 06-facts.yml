@@ -1,0 +1,7 @@
+- name: Facts
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: demo on facts
+      ansible.builtin.debug:
+        msg: Id of remote node is {{ ansible_bios_date }}
