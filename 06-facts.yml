@@ -4,4 +4,4 @@
   tasks:
     - name: demo on facts
       ansible.builtin.debug:
-        msg: Id of remote node is {{ ansible_date_time }}
+        msg: Id of remote node is {{ ansible_python_version }}
